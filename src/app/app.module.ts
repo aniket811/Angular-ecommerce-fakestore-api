@@ -5,13 +5,13 @@ import{HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OBSComponent } from './obs/obs.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
+// import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OBSComponent,
-    DropdownComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,9 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class AppComponent {
   CartItems:any[]=[];
-  public FormSubmission(e:any){
+  public AddtoCarts(e:any){
+      this.CartItems.push(e);
+      
   }
+
 }

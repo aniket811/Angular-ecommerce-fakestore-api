@@ -10,4 +10,10 @@ export class FakestoreeeService {
   public GetProducts():Observable <any[]>{
     return this.http.get<any[]>("https://fakestoreapi.com/products")
   }
+  public GetProductsByCategory(name:string):Observable <any[]>{
+    return this.http.get<any[]>(`https://fakestoreapi.com/products/category/${name}`)
+  }
+  public GetCategories():Observable <any[]>{
+    return this.http.get<any[]>("https://fakestoreapi.com/products/categories");
+  }
 }
