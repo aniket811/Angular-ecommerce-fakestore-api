@@ -4,7 +4,7 @@
         <!-- <app-dropdown (SendCategory)="GetCategoryByDropdown(name:string)"></app-dropdown> -->
         <select class="custom-select" name="change" #change (change)="GetCategoryByDropdown(change.value)">
             <option selected value="all">Select Category </option>
-            <option *ngFor="let category of Categories" value="{{category}}">{{category}}  </option>
+            <option *ngFor="let category of Categories" value="{{category}}">{{category|titlecase}}  </option>
           </select>
     </div>
     <div class="first">
