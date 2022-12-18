@@ -2,8 +2,8 @@
     
         <div class="w-20">
         <!-- <app-dropdown (SendCategory)="GetCategoryByDropdown(name:string)"></app-dropdown> -->
-        <select class="custom-select" name="change" #change (change)="GetCategoryByDropdown(change.value)">
-            <option selected value="all">Select Category </option>
+        <select class="custom-select" name="change" #change (change)="GetCategoryByDropdown(change.value)" placeholder="Select a Category">
+        <!-- <option selected value="all">Select Category </option> -->
             <option *ngFor="let category of Categories" value="{{category}}">{{category|titlecase}}  </option>
           </select>
     </div>
